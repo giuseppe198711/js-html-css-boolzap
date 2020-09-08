@@ -1,21 +1,79 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+.flex {
+  display: flex;
+}
+
 .page-wrapper {
   height: 100vh;
-  background-color: grey;
-  position: relative;
-
+  background-color: #D8DBD6;
+  display: flex;
+  justify-content: center;
 }
 
 .oriz-green {
-  background-color: green;
-  height: 100px;
-  position: absolute;
+  background-color: #009688;
+  height: 80px;
   top: 0;
   left: 0;
   width: 100%;
 }
 
-
 main {
-  height: 120px;
+  height: 500px;
   background-color: red;
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+
+.list-chat {
+  background-color: pink;
+  width: 35%;
+  border-right: 1px solid lightgrey;
+}
+
+.banner-utente {
+  height: 45px;
+  background-color: #EDEDED;
+}
+
+.notifiche {
+  height: 55px;
+  background-color: #9DE1FE;
+}
+
+.search {
+  height: 40px;
+  background-color: #F6F6F6;
+}
+
+.last-chat {
+  height: 55px;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid lightgrey;
+}
+
+
+
+
+
+.chat {
+  width: 65%;
+
+}
+.banner-ospite {
+  height: 45px;
+  background-color: #EDEDED;
+}
+
+.banner-chat {
+  height: 45px;
+  background-color: yellow;
+  left: 0;
+  bottom: 300px;
 }
