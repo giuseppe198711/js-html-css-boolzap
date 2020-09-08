@@ -8,13 +8,14 @@
 .oriz-green {
   background-color: green;
   height: 100px;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 
 main {
   height: 120px;
   background-color: red;
-  position: absolute;
-
 }
