@@ -1,0 +1,20 @@
+.page-wrapper {
+  height: 100vh;
+  background-color: grey;
+  position: relative;
+
+}
+
+.oriz-green {
+  background-color: green;
+  height: 100px;
+  position: relative;
+}
+
+
+main {
+  height: 120px;
+  background-color: red;
+  position: absolute;
+
+}
