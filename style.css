@@ -4,59 +4,61 @@
   padding: 0;
 
 }
-.flex {
-  display: flex;
-}
+
 
 .page-wrapper {
   height: 100vh;
-  background-color: #D8DBD6;
-  display: flex;
-  justify-content: center;
-}
+  background-color: red;
+  position: relative;
 
-.oriz-green {
-  background-color: #009688;
+  }
+
+.banner-top {
+  background-color: green;
   height: 80px;
-  top: 0;
-  left: 0;
   width: 100%;
 }
 
-main {
-  height: 500px;
-  background-color: red;
+.banner-central {
+  background-color: yellow;
+  height: 95vh;
   width: 80%;
-  margin: auto;
+  position: absolute;
+  top: 15px;
+  left: 10%;
   display: flex;
 }
 
-.list-chat {
-  background-color: pink;
+.last-chat {
   width: 35%;
+  height: 100%;
+  background-color: pink;
   border-right: 1px solid lightgrey;
 }
 
-.banner-utente {
-  height: 45px;
+.sezione-utente {
+  height: 50px;
   background-color: #EDEDED;
 }
 
-.notifiche {
-  height: 55px;
+.sezione-notifiche {
+  height: 60px;
   background-color: #9DE1FE;
 }
 
-.search {
-  height: 40px;
+.sezione-search {
+  height: 45px;
   background-color: #F6F6F6;
 }
 
-.last-chat {
-  height: 55px;
-  background-color: #FFFFFF;
-  border-bottom: 1px solid lightgrey;
+.chat1, .chat2, .chat3, .chat4, .chat5, .chat6, .chat7 {
+  height: 50px;
+  background-color: #ffffff;
+  border-top: 1px solid lightgrey;
+
 }
+
+
 
 
 
@@ -64,16 +66,27 @@ main {
 
 .chat {
   width: 65%;
-
+  height: 100%;
+  background-color: orange;
+  position: relative;
 }
-.banner-ospite {
-  height: 45px;
+
+.sfondo {
+  height: 100%;
+  background-image: url(img/mine.jpg);
+  background-size: cover;
+}
+
+
+.chat-corrente {
+  height: 50px;
   background-color: #EDEDED;
 }
 
-.banner-chat {
-  height: 45px;
-  background-color: yellow;
-  left: 0;
-  bottom: 300px;
+.sezione-tastiera {
+  height: 50px;
+  background-color: #EDEDED;
+  position: absolute;
+  bottom: 0;
+
 }
