@@ -163,6 +163,10 @@
   display: flex;
   align-items: center;
 }
+
+.contact.active {
+  background-color: lightgrey;
+}
 .contact .avatar {
   height: 60px;
   width: 60px;
@@ -191,10 +195,15 @@
 
 /* chat */
 .chat {
+  display: none;
   background-color: #F0F0F0;
   height: calc(100% - 140px);
   padding: 50px;
   overflow-y: scroll;
+}
+
+.chat.active {
+  display: block;
 }
 
 /* message */
@@ -207,8 +216,10 @@
   background-color: white;
   max-width: 350px;
   border-radius: 10px;
-  padding: 15px;
+  padding: 20px;
 }
+
+
 .message-time {
   position: absolute;
   font-size: 13px;
@@ -216,12 +227,64 @@
   right: 3px;
 }
 
+
+.angle-icon i {
+  color: transparent;
+}
+
+.message:hover .angle-icon i {
+color: #CBCBCB;
+}
+
+
+.angle-icon {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+
+}
+
+
+.info-chat {
+  color: #CBCBCB;
+  background-color: white;
+  position: absolute;
+  top: 50px;
+}
+
+.sent .info-chat {
+  right: 50px;
+}
+
+
+
+.info-chat ul li {
+  list-style: none;
+  white-space: nowrap;
+  padding: 8px 15px;
+  cursor: pointer;
+
+
+}
+
+
 .message-row.sent {
   justify-content: flex-end;
 }
 .message-row.sent .message {
   background-color: #DCF8C6;
 }
+
+.opzioni {
+
+  height: 80px;
+  width: 60px;
+}
+
+
+
+
+
 /* /message */
 
 /* /chat */

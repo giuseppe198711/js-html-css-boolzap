@@ -1,4 +1,5 @@
 
+
 $(document).ready(function() {
   // con un click  in questo caso sull'areoplanino
   // avvio un messaggio richiamo questo attraverso la funzione
@@ -28,6 +29,34 @@ $(document).ready(function() {
       }
     }
   );
+
+  // quando clicco su uno dei contatti gli assegno la classe active e
+  // la levo a tutti gli altri
+
+   $(".contact").click(function() {
+
+   // rimuovo la classe active ai contatti
+   $(".contact").removeClass("active");
+
+
+   //  rimuovo la classe active anche alle chat
+   $(".chat").removeClass("active");
+
+
+   // aggiungo la classe active a cio che ho cliccato in questo
+   // caso ai contatti
+   $(this).addClass("active");
+
+   // dell'elemento cliccato mi salvo in una variabile  il suo valore
+   // "data-chat" (che ho nell html)
+   var infoContact = $(this).attr("data-contact");
+
+   // applico la classe active alla chat con lo stesso valore
+   $(".chat[data-chat="+infoContact+"]").addClass("active");
+
+
+   });
+
 
 });
 
@@ -77,7 +106,7 @@ function risposta(text) {
   var template = $(".templates .message-row").clone();
   // inserisco il testo nel tag p del template
   template.find("p").text(text);
-  // appendo il nuovo oggetto
+  // appendulo il nuovo oggetto
   $(".chat").append(template);
 }
 // applico una funzione timeOut che nel momento in cui scrivo un messaggio
@@ -104,5 +133,11 @@ function () {
     // facciamo ricomparire tutti gli elementi
     $(".contact").removeClass("d_none_imp");
   }
-}
-);
+
+  });
+
+  $(".chat").on("click", ".info-chat li:last-child", function(){
+    $(this).parents(".message-row").remove();
+  });
+
+  $(".fa-angle-down").click("")
