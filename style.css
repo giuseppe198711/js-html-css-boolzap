@@ -126,11 +126,23 @@
   background-color: #F6F6F6;
   height: 50px;
   padding: 10px;
+  border: 0 none transparent;
+
 }
+
+/* .search:focus {
+  box-shadow: none;
+} */
 
 .search input {
   width: calc(100% - 80px);
   height: 100%;
+
+}
+
+input {
+  outline: none;
+  padding-left: 10px;
 }
 
 #search {
@@ -162,6 +174,8 @@
   padding: 10px;
   display: flex;
   align-items: center;
+  cursor: pointer;
+
 }
 
 .contact.active {
@@ -187,6 +201,7 @@
   align-self: flex-start;
   margin-top: 5px;
 }
+
 /* /contacts */
 
 /* /COL LEFT */
@@ -239,17 +254,19 @@ color: #CBCBCB;
 
 .angle-icon {
   position: absolute;
-  top: 3px;
   right: 3px;
-
+  top: 3px;
 }
 
 
 .info-chat {
+  display: none;
   color: #CBCBCB;
   background-color: white;
   position: absolute;
   top: 50px;
+  box-shadow: 2px 1px 10px #555;
+  cursor: pointer;
 }
 
 .sent .info-chat {
@@ -263,6 +280,7 @@ color: #CBCBCB;
   white-space: nowrap;
   padding: 8px 15px;
   cursor: pointer;
+  color: grey;
 
 
 }
